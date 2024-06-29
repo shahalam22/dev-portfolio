@@ -27,7 +27,7 @@ const Hero = () => {
                     />
 
                     <p className='text-center text-white-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hi, I'm Shah Alam, a web developer based in Dhaka, Bangladesh. I specialize in building fast, responsive, and accessible websites using modern web technologies.
+                        Hi, I&apos;m Shah Alam, a web developer based in Dhaka, Bangladesh. I specialize in building fast, responsive, and accessible websites using modern web technologies.
                     </p>
 
                     <a href="#about">
