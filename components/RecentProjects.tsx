@@ -17,10 +17,10 @@ const RecentProjects = () => {
                     <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
                         <PinContainer title={title} href={link}>
                             <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
-                                <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                    <Image src="https://shahalam22.github.io/dev-portfolio/bg.png" alt="bg-img" />
-                                </div>
-                                <Image src={img} alt={title} className='z-10 absolute bottom-0'/>
+                                {/* <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
+                                    <img src="https://shahalam22.github.io/dev-portfolio/bg.png" alt="bg-img"/>
+                                </div> */}
+                                <Image src={img} alt={title} className='z-10 absolute bottom-0 w-full h-auto' width={400} height={400}/>
                             </div>
                             <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>{title}</h1>
                             <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>{des}</p>
@@ -31,7 +31,7 @@ const RecentProjects = () => {
                                         <div key={icon} className='border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center' style={{
                                             transform: `translateX(-${5*index*2}px)`
                                         }}>
-                                            <Image src={icon} alt={icon} className='p-2'/>
+                                            <img src={icon} alt={icon} className='p-2'/>
                                         </div>
                                     ))}
                                 </div>
